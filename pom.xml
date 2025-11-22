@@ -103,7 +103,7 @@
 
     <properties>
         <scx-jdbc.version>4.5.0-SNAPSHOT</scx-jdbc.version>
-        <mssql-jdbc.version>12.8.1.jre11</mssql-jdbc.version>
+        <mssql-jdbc.version>13.3.0.jre11-preview</mssql-jdbc.version>
         <scx-logging.version>0.0.1</scx-logging.version>
         <testng.version>7.10.2</testng.version>
     </properties>
