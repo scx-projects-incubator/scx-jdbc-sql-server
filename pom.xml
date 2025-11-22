@@ -4,12 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>cool.scx</groupId>
+        <groupId>dev.scx</groupId>
         <artifactId>scx-parent</artifactId>
-        <version>27</version>
+        <version>1</version>
         <relativePath/>
     </parent>
 
+    <groupId>cool.scx</groupId>
     <artifactId>scx-jdbc-sql-server</artifactId>
     <packaging>jar</packaging>
     <version>3.8.5</version>
@@ -72,7 +73,7 @@
         <dependency>
             <groupId>cool.scx</groupId>
             <artifactId>scx-jdbc</artifactId>
-            <version>${scx.version}</version>
+            <version>${scx-jdbc.version}</version>
         </dependency>
 
         <!-- sql server 驱动 -->
@@ -85,9 +86,9 @@
         <!-- ****************** 以下为测试依赖 ****************** -->
 
         <dependency>
-            <groupId>cool.scx</groupId>
+            <groupId>dev.scx</groupId>
             <artifactId>scx-logging</artifactId>
-            <version>${scx.version}</version>
+            <version>${scx-logging.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -101,10 +102,24 @@
     </dependencies>
 
     <properties>
-        <scx.version>3.8.5</scx.version>
+        <scx-jdbc.version>4.5.0-SNAPSHOT</scx-jdbc.version>
         <mssql-jdbc.version>12.8.1.jre11</mssql-jdbc.version>
+        <scx-logging.version>0.0.1</scx-logging.version>
         <testng.version>7.10.2</testng.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <name>Central Portal Snapshots</name>
+            <id>central-portal-snapshots</id>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
