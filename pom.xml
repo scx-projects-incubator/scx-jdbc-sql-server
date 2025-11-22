@@ -12,14 +12,21 @@
 
     <groupId>cool.scx</groupId>
     <artifactId>scx-jdbc-sql-server</artifactId>
+    <version>4.5.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <version>3.8.5</version>
 
     <name>SCX JDBC SQL Server</name>
     <url>https://github.com/scx567888/scx-jdbc-sql-server</url>
     <description>
         SCX JDBC SQL Server
     </description>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/scx567888/scx-jdbc-sql-server/blob/master/LICENSE</url>
+        </license>
+    </licenses>
 
     <developers>
         <developer>
@@ -28,13 +35,6 @@
             <email>scx567888@outlook.com</email>
         </developer>
     </developers>
-
-    <licenses>
-        <license>
-            <name>MIT License</name>
-            <url>https://github.com/scx567888/scx-jdbc-sql-server/blob/master/LICENSE</url>
-        </license>
-    </licenses>
 
     <scm>
         <connection>scm:git:https://github.com/scx567888/scx-jdbc-sql-server.git</connection>
